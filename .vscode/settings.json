@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "qcoreapplication": "cpp",
+        "chrono": "cpp",
+        "span": "cpp",
+        "optional": "cpp",
+        "format": "cpp",
+        "system_error": "cpp",
+        "string_view": "cpp"
+    },
+
+    "cmake.configureSettings": {
+        "Qt6_DIR": "/opt/homebrew/lib/cmake/Qt6",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+    },
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": true,
+    "cmake.sourceDirectory": "${workspaceFolder}",
+
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}

@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "CMake: build VoxPitch",
+            "command": "cmake --build ${workspaceFolder}/build -j$(sysctl -n hw.ncpu)",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "用 CMake Tools 已配置好的 build 目录编译 VoxPitch"
+        },
+        {
+            "type": "shell",
+            "label": "Run VoxPitch",
+            "command": "${workspaceFolder}/build/VoxPitch",
+            "dependsOn": "CMake: build VoxPitch",
+            "problemMatcher": [],
+            "detail": "编译后直接运行 VoxPitch"
+        }
+    ],
+    "version": "2.0.0"
+}
